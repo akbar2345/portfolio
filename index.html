@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akbar Ali — MarkLogic Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">AA<span class="dot">.</span></a>
+  <ul id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#origin">Story</a></li>
+    <li><a href="#journey">Career</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+  <button class="hamburger" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag"><span class="blink">●</span> Available for opportunities</div>
+      <h1>
+        <span class="h1-name">Akbar Ali</span>
+        <span class="h1-rule"></span>
+        <span class="h1-title">MarkLogic<br><em>Developer</em></span>
+      </h1>
+      <div class="hero-btns">
+        <a href="https://www.linkedin.com/in/akbar-ali-developer" target="_blank" rel="noopener noreferrer" class="btn-primary">LinkedIn</a>
+      </div>
+      <p class="hero-desc">12+ years engineering robust XML &amp; NoSQL data solutions. Specialist in MarkLogic, XQuery, and enterprise content pipelines. Based in Noida — open to remote worldwide.</p>
+      <div class="hero-pills">
+        <span>MarkLogic</span><span>XQuery</span><span>XML/JSON</span>
+        <span>REST APIs</span><span>CORB/MLCP</span><span>XSLT</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#origin" class="btn-primary">My Story</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+
+      <!-- Left column: stats -->
+      <div class="hero-col-left">
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-n">12<sup>+</sup></span><span class="stat-l">Years IT</span></div>
+          <div class="stat-sep"></div>
+          <div class="stat"><span class="stat-n">7<sup>+</sup></span><span class="stat-l">Years MarkLogic</span></div>
+          <div class="stat-sep"></div>
+          <div class="stat"><span class="stat-n">5</span><span class="stat-l">ML Certifications</span></div>
+          <div class="stat-sep"></div>
+          <div class="stat"><span class="stat-n">3<sup>+</sup></span><span class="stat-l">Awards Won</span></div>
+        </div>
+      </div>
+
+      <!-- Center column: Profile photo -->
+      <div class="hero-photo-frame img-upload-zone" data-img-key="profile">
+        <img src="images/profile.jpg" alt="Akbar Ali" class="hero-photo uploadable-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="photo-fallback"><span>Profile<br>Photo</span></div>
+        <div class="upload-overlay"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>Change Photo</span></div>
+      </div>
+
+      <!-- Right column: Experience mini card -->
+      <div class="hero-side-card">
+        <div class="hsc-header">
+          <span class="hsc-label">Experience</span>
+        </div>
+        <div class="hsc-body">
+          <div class="hsc-exp-item">
+            <span class="hsc-exp-year">2022 – Present</span>
+            <span class="hsc-exp-role">MarkLogic Consultant</span>
+            <span class="hsc-exp-co">Datavid · CAS (ACS)</span>
+          </div>
+          <div class="hsc-sep"></div>
+          <div class="hsc-exp-item">
+            <span class="hsc-exp-year">2017 – 2022</span>
+            <span class="hsc-exp-role">MarkLogic Developer</span>
+            <span class="hsc-exp-co">Innodata · BSI Group</span>
+          </div>
+          <div class="hsc-sep"></div>
+          <div class="hsc-exp-item">
+            <span class="hsc-exp-year">2013 – 2017</span>
+            <span class="hsc-exp-role">Senior XML Developer</span>
+            <span class="hsc-exp-co">Innodata · Elsevier</span>
+          </div>
+          <div class="hsc-sep"></div>
+          <div class="hsc-exp-item">
+            <span class="hsc-exp-year">2012 – 2013</span>
+            <span class="hsc-exp-role">XML Developer</span>
+            <span class="hsc-exp-co">Netsoft Global</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">scroll <span>↓</span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-eyebrow">01 / Who I Am</div>
+    <div class="about-grid">
+      <div class="about-heading">
+        <h2>Developer.<br>MarkLogic Expert.<br><em>Creator.</em></h2>
+      </div>
+      <div class="about-body">
+        <p>I'm a <strong>Senior MarkLogic Developer</strong> with 12+ years in enterprise data engineering — specializing in XQuery, XML pipelines, NoSQL architecture, and REST API development on <strong>MarkLogic 8 through 12</strong>.</p>
+        <p>My career spans publishing giants like <strong>Elsevier</strong> and <strong>Wolters Kluwer</strong>, where I led XML teams, to the <strong>British Standards Institution (BSI)</strong> where I engineered the Smart Content Service platform — and now the <strong>American Chemical Society (CAS)</strong>, where I manage an Operational Data Hub of 62M+ documents with 60% latency improvements.</p>
+        <p>I hold <strong>5</strong> MarkLogic certifications including <strong>MarkLogic v10 and v12</strong>, have won multiple performance awards, and am actively building <strong><a href="https://marketplace.visualstudio.com/items?itemName=akbar-marklogic.marklogic-copilot" target="_blank" rel="noopener noreferrer">MLCopilot</a></strong> — a VS Code extension for MarkLogic developers — as my personal side project. Outside work, I write Urdu poetry, play cricket, and explore AI tools that solve real developer problems.</p>
+      </div>
+    </div>
+
+    <div class="highlights-row">
+      <div class="highlight fade-in">
+        <div class="hl-num">01</div>
+        <h4>End-to-End Ownership</h4>
+        <p>From development to deployment, bug fixes to hotfixes — full delivery cycle, independently.</p>
+      </div>
+      <div class="highlight fade-in">
+        <div class="hl-num">02</div>
+        <h4>High-Impact Fixer</h4>
+        <p>Recognized with the Brilliant Performance Award for critical bug resolution on production systems.</p>
+      </div>
+      <div class="highlight fade-in">
+        <div class="hl-num">03</div>
+        <h4>DB Migration Expert</h4>
+        <p>Led MarkLogic v8 to v10 upgradation — DB-level and Forest-level backup/restore included.</p>
+      </div>
+      <div class="highlight fade-in">
+        <div class="hl-num">04</div>
+        <h4>Now: Building SaaS</h4>
+        <p>Building <strong><a href="https://marketplace.visualstudio.com/items?itemName=akbar-marklogic.marklogic-copilot" target="_blank" rel="noopener noreferrer">MLCopilot</a></strong> VS Code extension and AI-powered products for developers worldwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORIGIN -->
+<section id="origin">
+  <div class="section-inner">
+    <div class="section-eyebrow">02 / The Origin Story</div>
+    <h2 class="section-title">From a Farming Village in UP<br>to Enterprise Technology</h2>
+
+    <div class="origin-top fade-in">
+      <div class="origin-text">
+        <p>I grew up in a farming family in <strong>Etah, Uttar Pradesh</strong> — a world away from computers, servers, and software. There was no tech ecosystem around me, no engineers in the family, no roadmap. Just a quiet determination that education could change everything.</p>
+        <p>I moved to Delhi, completed my <strong>BA</strong> from Dr. B.R. Ambedkar University, earned a <strong>GNIIT</strong> certification, and later a <strong>Master's in Computer Applications</strong> from Sikkim Manipal University — all while working full-time. Every degree, every certification was earned in parallel with real work, because that's the only way I knew how to do things.</p>
+        <p>My first IT role in December 2013 was as an <strong>XML Programmer</strong> at <strong>Netsoft</strong>, converting medical and scientific content for <strong>Elsevier</strong>. Within four months I moved to <strong>Innodata</strong>, led an XML team on the Wolters Kluwer Belgium project, and won the <strong>Silver Performance Award</strong> in my first full year. Then came MarkLogic — and everything changed.</p>
+        <p>Over the next 5 years at Innodata, I engineered the Smart Content Service for the British Standards Institution — the platform that powers standards like ISO, CEN, and IEC globally. I led a zero-downtime MarkLogic v8 to v10 upgrade, built production REST pipelines, and was recognized with the <strong>Star Performer Award</strong> in 2019.</p>
+        <p>In 2022, I joined <strong>Datavid</strong> as a MarkLogic Consultant on the <strong>American Chemical Society</strong> project — the largest and most complex data challenge of my career. A 62M+ document Operational Data Hub, multiple entity schemas, CTS query optimization that cut search latency by 60%. In 2025, I was named Datavid Consultant of the Month.</p>
+        <p>Alongside all of this, I built <strong>MLCopilot</strong> — a VS Code extension for MarkLogic developers — because I was tired of having no proper tooling for XQuery. It's now live on the VS Code Marketplace. That's the kind of developer I am: if the tool doesn't exist, I build it.</p>
+      </div>
+      <div class="origin-photos">
+        <div class="origin-photo-wrap img-upload-zone" data-img-key="village">
+          <img src="images/village.jpg" alt="Village, UP" class="origin-photo uploadable-img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="photo-fallback small"><span>Village Photo</span></div>
+          <div class="upload-overlay"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          <div class="photo-caption">Village roots, Etah UP</div>
+        </div>
+        <div class="origin-photo-wrap img-upload-zone" data-img-key="professional">
+          <img src="images/professional.jpg" alt="Professional" class="origin-photo uploadable-img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="photo-fallback small"><span>Professional Photo</span></div>
+          <div class="upload-overlay"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          <div class="photo-caption">Enterprise Developer, 2024</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="origin-timeline fade-in">
+      <div class="ot-item"><span class="ot-year">~2000s</span><div class="ot-dot"></div><div class="ot-text"><strong>Farming Family, UP</strong> — Born in Etah, Uttar Pradesh</div></div>
+      <div class="ot-item"><span class="ot-year">2005–07</span><div class="ot-dot"></div><div class="ot-text"><strong>10+2 Division I</strong> — SLBSS Inter College</div></div>
+      <div class="ot-item"><span class="ot-year">2008–12</span><div class="ot-dot"></div><div class="ot-text"><strong>GNIIT + BA</strong> — Moved to Delhi, Dr. B.R. Ambedkar University</div></div>
+      <div class="ot-item"><span class="ot-year">Dec 2013</span><div class="ot-dot"></div><div class="ot-text"><strong>First IT Job</strong> — XML Programmer at Netsoft, Elsevier project</div></div>
+      <div class="ot-item"><span class="ot-year">Apr 2014</span><div class="ot-dot"></div><div class="ot-text"><strong>Team Coach</strong> — Innodata, led XML team on Walters Kluwer project</div></div>
+      <div class="ot-item"><span class="ot-year">Dec 2017</span><div class="ot-dot"></div><div class="ot-text"><strong>MarkLogic Developer</strong> — BSI Smart Content platform, 5 ML Certifications</div></div>
+      <div class="ot-item"><span class="ot-year">2017+</span><div class="ot-dot"></div><div class="ot-text"><strong>MCA Degree</strong> — Sikkim Manipal University (working full-time)</div></div>
+      <div class="ot-item"><span class="ot-year">2025 →</span><div class="ot-dot active"></div><div class="ot-text"><strong>Builder</strong> — MLCopilot, AI products</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER TIMELINE -->
+<section id="journey">
+  <div class="section-inner">
+    <div class="section-eyebrow">03 / Career Timeline</div>
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="timeline">
+
+      <!-- DATAVID / ACS — Current -->
+      <div class="tl-item fade-in">
+        <div class="tl-year">Sep 2022<br>— Present</div>
+        <div class="tl-body">
+          <div class="tl-header">
+            <div class="tl-logo-wrap img-upload-zone" data-img-key="logo-datavid">
+              <img src="images/logo-datavid.png" alt="Datavid" class="tl-logo uploadable-img"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="logo-fallback"><span>Logo</span></div>
+              <div class="upload-overlay logo-overlay"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+            </div>
+            <div>
+              <div class="tl-duration">2.5+ Years · Current</div>
+              <div class="tl-role">MarkLogic Consultant</div>
+              <div class="tl-company">Datavid Pvt Ltd · Gurugram — American Chemical Society (CAS)</div>
+            </div>
+          </div>
+          <p class="tl-desc">HAPI &amp; Operational Data Hub (ODH) for CAS — enterprise data management handling 62M+ documents across multiple entities (Disease, Protein, etc.) with dedicated schemas, workflows, and validation rules.</p>
+          <ul class="tl-bullets">
+            <li>Architected data ingestion pipelines processing <strong>62M+ documents</strong> with cross-entity data integrity</li>
+            <li>Optimized CTS queries and indexing — <strong>60% reduction in search latency</strong></li>
+            <li>Designed TDE templates and complex Optic API queries for transformations and analytics</li>
+            <li>Implemented CORB batch processing for large-scale validations and data quality checks</li>
+          </ul>
+          <div class="tl-award">🏅 Datavid Consultant of the Month — 2025</div>
+        </div>
+      </div>
+
+      <!-- INNODATA / BSI -->
+      <div class="tl-item fade-in">
+        <div class="tl-year">Dec 2017<br>— Sep 2022</div>
+        <div class="tl-body">
+          <div class="tl-header">
+            <div class="tl-logo-wrap img-upload-zone" data-img-key="logo-innodata-1">
+              <img src="images/logo-innodata.png" alt="Innodata" class="tl-logo uploadable-img"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="logo-fallback"><span>Logo</span></div>
+              <div class="upload-overlay logo-overlay"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+            </div>
+            <div>
+              <div class="tl-duration">5 Years</div>
+              <div class="tl-role">MarkLogic Developer</div>
+              <div class="tl-company">Innodata India Pvt Ltd · Noida — British Standards Institution (BSI)</div>
+            </div>
+          </div>
+          <p class="tl-desc">Smart Content Service platform for BSI Group — automated &amp; manual content generation with REST exposure for real-time standards development. Integrated with ISO, CEN, CLC, IEC feeds.</p>
+          <ul class="tl-bullets">
+            <li>XQuery REST services, scripts and modules across MarkLogic v8, v9, v10</li>
+            <li>Led v8 → v10 upgrade with <strong>zero downtime</strong>; DB-level &amp; Forest-level backup/restore</li>
+            <li>MarkLogic Triggers, DLS, transaction management; profiling &amp; performance tuning</li>
+            <li>Production hotfixes; MLCP &amp; CORB data ingestion/export pipelines</li>
+          </ul>
+          <div class="tl-award">⭐ Star Performer Award 2019</div>
+        </div>
+      </div>
+
+      <div class="tl-item fade-in">
+        <div class="tl-year">2014 — 2017</div>
+        <div class="tl-body">
+          <div class="tl-header">
+            <div class="tl-logo-wrap img-upload-zone" data-img-key="logo-innodata-2">
+              <img src="images/logo-innodata.png" alt="Innodata" class="tl-logo uploadable-img"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="logo-fallback"><span>Logo</span></div>
+              <div class="upload-overlay logo-overlay"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+            </div>
+            <div>
+              <div class="tl-duration">3.5 Years</div>
+              <div class="tl-role">Coach, XML Team</div>
+              <div class="tl-company">Innodata India Pvt Ltd · Walters Kluwer Belgium Project</div>
+            </div>
+          </div>
+          <p class="tl-desc">Led the XML conversion team — recognized with the Silver Individual Performance Award for Q3/Q4 2015.</p>
+          <ul class="tl-bullets">
+            <li>Analyzed DTD and Schema specs; prepared samples and macros for team automation</li>
+            <li>Validated all XML against DTD/Schema; mentored team across multiple project phases</li>
+          </ul>
+          <div class="tl-award">🥈 Silver Individual Performance Award Q3/Q4 2015</div>
+        </div>
+      </div>
+
+      <div class="tl-item fade-in">
+        <div class="tl-year">2013 — 2014</div>
+        <div class="tl-body">
+          <div class="tl-header">
+            <div class="tl-logo-wrap img-upload-zone" data-img-key="logo-netsoft">
+              <img src="images/logo-netsoft.png" alt="Netsoft" class="tl-logo uploadable-img"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+              <div class="logo-fallback"><span>Logo</span></div>
+              <div class="upload-overlay logo-overlay"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+            </div>
+            <div>
+              <div class="tl-duration">4 Months</div>
+              <div class="tl-role">XML Programmer</div>
+              <div class="tl-company">Netsoft Consulting Services · Elsevier &amp; Medical Books</div>
+            </div>
+          </div>
+          <p class="tl-desc">First professional role — converting medical and scientific content from PDF to structured XML for Elsevier.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-eyebrow">04 / Technical Stack</div>
+    <h2 class="section-title">Skills &amp; Technologies</h2>
+    <div class="skills-grid">
+
+      <div class="sk-card fade-in">
+        <div class="sk-icon">🗄️</div>
+        <h3>Database &amp; Query</h3>
+        <div class="sk-pills">
+          <span class="pill hot">MarkLogic 8/9/10</span>
+          <span class="pill hot">XQuery</span>
+          <span class="pill hot">XPath</span>
+          <span class="pill">CORB API</span>
+          <span class="pill">MLCP</span>
+          <span class="pill">DLS</span>
+          <span class="pill">Triggers</span>
+          <span class="pill">Transactions</span>
+        </div>
+      </div>
+
+      <div class="sk-card fade-in">
+        <div class="sk-icon">📄</div>
+        <h3>Data &amp; Markup</h3>
+        <div class="sk-pills">
+          <span class="pill hot">XML</span>
+          <span class="pill hot">JSON</span>
+          <span class="pill hot">XSLT</span>
+          <span class="pill">XSD Schema</span>
+          <span class="pill">DTD</span>
+          <span class="pill">HTML5</span>
+          <span class="pill">CSS</span>
+        </div>
+      </div>
+
+      <div class="sk-card fade-in">
+        <div class="sk-icon">⚙️</div>
+        <h3>Dev &amp; APIs</h3>
+        <div class="sk-pills">
+          <span class="pill hot">MarkLogic REST APIs</span>
+          <span class="pill hot">JavaScript</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">Python</span>
+          <span class="pill">REST Services</span>
+          <span class="pill">Playwright</span>
+        </div>
+      </div>
+
+      <div class="sk-card fade-in">
+        <div class="sk-icon">🛠️</div>
+        <h3>Tools &amp; Platforms</h3>
+        <div class="sk-pills">
+          <span class="pill">Oxygen XML Editor</span>
+          <span class="pill">Jira</span>
+          <span class="pill">Azure DevOps</span>
+          <span class="pill">VS Code</span>
+          <span class="pill">Eclipse IDE</span>
+          <span class="pill">Slack / Teams</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-eyebrow">05 / Enterprise Projects</div>
+    <h2 class="section-title">Projects &amp; Products</h2>
+    <div class="projects-grid">
+
+      <!-- ACS ODH — Current flagship project -->
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="proj-badge live">Live · Enterprise</span>
+          <div class="proj-logo img-upload-zone" data-img-key="logo-acs">
+            <img src="images/logo-acs.png" alt="ACS" class="uploadable-img proj-logo-img"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+            <div class="logo-fallback small"><span>Logo</span></div>
+            <div class="upload-overlay logo-overlay"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          </div>
+        </div>
+        <h3>HAPI &amp; ODH — American Chemical Society</h3>
+        <p>Operational Data Hub for CAS managing 62M+ documents across multiple entities (Disease, Protein, etc.) with dedicated schemas, workflows, and validation rules. Single source of truth for operational data.</p>
+        <div class="proj-highlights">
+          <span class="proj-hl">⚡ 60% latency reduction via CTS optimization</span>
+          <span class="proj-hl">📦 62M+ documents ingested</span>
+        </div>
+        <div class="proj-stack">
+          <span>MarkLogic 12</span><span>XQuery</span><span>Optic API</span><span>TDE Templates</span><span>CORB</span><span>CTS Queries</span>
+        </div>
+      </div>
+
+      <!-- BSI Smart Content -->
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="proj-badge done">Completed · Enterprise</span>
+          <div class="proj-logo img-upload-zone" data-img-key="logo-bsi">
+            <img src="images/logo-bsi.png" alt="BSI" class="uploadable-img proj-logo-img"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+            <div class="logo-fallback small"><span>Logo</span></div>
+            <div class="upload-overlay logo-overlay"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          </div>
+        </div>
+        <h3>BSI Smart Content Service</h3>
+        <p>Enterprise content processing platform for the British Standards Institution — automated ingestion and REST exposure of international standards (ISO, CEN, CLC, IEC) with real-time development status tracking.</p>
+        <div class="proj-highlights">
+          <span class="proj-hl">🔧 v8 → v10 zero-downtime upgrade</span>
+          <span class="proj-hl">⭐ Star Performer Award 2019</span>
+        </div>
+        <div class="proj-stack"><span>MarkLogic 8–10</span><span>XQuery</span><span>XML</span><span>REST APIs</span><span>CORB</span><span>MLCP</span></div>
+      </div>
+
+      <!-- MLCopilot -->
+      <div class="proj-card fade-in personal-proj">
+        <div class="proj-top">
+          <span class="proj-badge building">Side Project · Live</span>
+          <span class="personal-tag">Personal</span>
+        </div>
+        <h3>MLCopilot — VS Code Extension</h3>
+        <p>My personal side project — an AI-powered VS Code extension built from scratch for MarkLogic developers. Solves the pain I faced daily: no proper XQuery tooling. Now published on VS Code Marketplace with real users.</p>
+        <div class="proj-highlights">
+          <span class="proj-hl">🚀 Published on VS Code Marketplace</span>
+          <span class="proj-hl">🤖 Claude API powered</span>
+        </div>
+        <ul class="proj-features">
+          <li>XQuery syntax highlighting &amp; LSP-based error detection</li>
+          <li>QConsole-equivalent query execution panel inside VS Code</li>
+          <li>CORB task automation &amp; Claude AI assistance</li>
+          <li>Chrome extension for QConsole also shipped</li>
+        </ul>
+        <div class="proj-stack">
+          <span>TypeScript</span><span>XQuery LSP</span><span>Claude API</span><span>CORB Automation</span><span>VS Code API</span>
+        </div>
+      </div>
+
+      <!-- Instagram Post Generator -->
+      <div class="proj-card fade-in personal-proj">
+        <div class="proj-top">
+          <span class="proj-badge building">Side Project · Building</span>
+          <span class="personal-tag">Personal</span>
+        </div>
+        <h3>Instagram Post Generator</h3>
+        <p>AI-powered content tool I'm building for my own developer brand <strong>@akbar_builds</strong> — generates MarkLogic/XQuery tips, career stories, and dev memes automatically for Instagram &amp; Facebook.</p>
+        <div class="proj-highlights">
+          <span class="proj-hl">✨ Claude API powered</span>
+          <span class="proj-hl">📸 Instagram + Facebook</span>
+        </div>
+        <ul class="proj-features">
+          <li>10 content categories — XQuery tips, MLCopilot spotlight, interview tips</li>
+          <li>6 tone modes — educational, meme, story, motivational</li>
+          <li>Batch generate 1/3/5 posts with one click</li>
+          <li>One-click copy → paste to Meta Business Suite for scheduling</li>
+        </ul>
+        <div class="proj-stack">
+          <span>Claude API</span><span>HTML/JS</span><span>Meta Business</span><span>Content Strategy</span>
+        </div>
+      </div>
+
+      <!-- Walters Kluwer -->
+      <div class="proj-card fade-in">
+        <div class="proj-top">
+          <span class="proj-badge done">Completed · Enterprise</span>
+          <div class="proj-logo img-upload-zone" data-img-key="logo-wk">
+            <img src="images/logo-wk.png" alt="Walters Kluwer" class="uploadable-img proj-logo-img"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+            <div class="logo-fallback small"><span>Logo</span></div>
+            <div class="upload-overlay logo-overlay"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          </div>
+        </div>
+        <h3>Wolters Kluwer XML Pipeline</h3>
+        <p>Large-scale XML conversion pipeline for legal and financial content — schema-validated XML delivery, team leadership across full project lifecycle.</p>
+        <div class="proj-highlights">
+          <span class="proj-hl">🥈 Silver Performance Award Q3/Q4 2015</span>
+        </div>
+        <div class="proj-stack"><span>XML / DTD</span><span>XSLT</span><span>XSD Schema</span><span>MS Word Macros</span><span>Regex</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-inner">
+    <div class="section-eyebrow">06 / Credentials</div>
+    <h2 class="section-title">Certifications &amp; Awards</h2>
+
+    <div class="creds-grid">
+      <div class="creds-col">
+        <h3 class="creds-heading">MarkLogic Certifications</h3>
+        <div class="cert-list">
+          <div class="cert-row fade-in"><div class="cert-check">✓</div><p><strong><a href="https://www.linkedin.com/in/akbar-ali-developer/details/certifications" target="_blank" rel="noopener noreferrer">MarkLogic Certified Developer — Version 12</a></strong></p></div>
+          <div class="cert-row fade-in"><div class="cert-check">✓</div><p><strong>MarkLogic Certified Developer — Version 10</strong></p></div>
+          <div class="cert-row fade-in"><div class="cert-check">✓</div><p>Developing MarkLogic Applications I — XQuery Assessment &amp; Training</p></div>
+          <div class="cert-row fade-in"><div class="cert-check">✓</div><p>Developing MarkLogic Applications II — Advanced XQuery Training</p></div>
+          <div class="cert-row fade-in"><div class="cert-check">✓</div><p>Administering MarkLogic Server — Learning Assessment &amp; Training</p></div>
+        </div>
+      </div>
+      <div class="creds-col">
+        <h3 class="creds-heading">Awards</h3>
+        <div class="awards-list">
+          <div class="award-row fade-in"><span class="aw-icon">🏅</span><div><strong>Datavid Consultant of the Month — 2025</strong><p>Recognized for outstanding contributions on the ACS CAS project</p></div></div>
+          <div class="award-row fade-in"><span class="aw-icon">⭐</span><div><strong>Star Performer Award 2019</strong><p>Outstanding individual contribution — Innodata India</p></div></div>
+          <div class="award-row fade-in"><span class="aw-icon">🏆</span><div><strong>Brilliant Performance Award</strong><p>Critical bug resolution, BSI MarkLogic project</p></div></div>
+          <div class="award-row fade-in"><span class="aw-icon">🥈</span><div><strong>Silver Performance Award</strong><p>Wolters Kluwer Belgium, Q3 &amp; Q4 2015</p></div></div>
+          <div class="award-row fade-in"><span class="aw-icon">✍️</span><div><strong>Best Poetry Award ×3</strong><p>Diwali competition winner — 2014, 2015, 2016</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAL -->
+<section id="personal">
+  <div class="section-inner">
+    <div class="section-eyebrow">07 / Beyond The Code</div>
+    <h2 class="section-title">The Human Behind The Screen</h2>
+    <div class="personal-grid">
+      <div class="pers-card fade-in"><span>🏏</span><h4>Cricket</h4><p>Strategy, patience, and the perfect delivery — echoes of good debugging.</p></div>
+      <div class="pers-card fade-in"><span>✍️</span><h4>Urdu Poetry</h4><p>Three-time Diwali poetry award winner. Depth in verse parallels well-crafted code.</p></div>
+      <div class="pers-card fade-in"><span>🎵</span><h4>Music</h4><p>A good playlist is as important as good documentation during long dev sessions.</p></div>
+      <div class="pers-card fade-in"><span>🌍</span><h4>Languages</h4><p>Fluent in Hindi, English, and Urdu — bridging technical and business stakeholders.</p></div>
+      <div class="pers-card fade-in"><span>🧠</span><h4>Always Learning</h4><p>Deep into Python, FastAPI, and AI tools. The best developers never stop being students.</p></div>
+      <div class="pers-card fade-in"><span>📍</span><h4>Based in Delhi</h4><p>Open to remote-first opportunities globally — US, UK &amp; European teams welcome.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-wrap">
+      <div class="contact-left fade-in">
+        <div class="section-eyebrow">08 / Let's Connect</div>
+        <h2>Open to New<br>Opportunities</h2>
+        <p>Whether you're looking for a senior MarkLogic developer, an XML/XQuery specialist, or someone to help build your next data product — I'd love to hear from you.</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/akbar-ali-developer/" target="_blank" class="cl-link">
+            <div class="cl-icon">in</div>
+            <div><strong>LinkedIn</strong><span>https://www.linkedin.com/in/akbar-ali-developer/</span></div>
+          </a>
+          <a href="https://stackoverflow.com/users/9152726" target="_blank" class="cl-link">
+            <div class="cl-icon">SO</div>
+            <div><strong>Stack Overflow</strong><span>stackoverflow.com/users/9152726</span></div>
+          </a>
+          <a href="mailto:akbar@example.com" class="cl-link">
+            <div class="cl-icon">@</div>
+            <div><strong>Email</strong><span>Drop me a message anytime</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form fade-in">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Jane Smith" />
+        </div>
+        <div class="form-group">
+          <label>Your Email</label>
+          <input type="email" placeholder="jane@company.com" />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+        </div>
+        <button class="btn-primary full"
+          onclick="alert('Thanks for reaching out! Please contact me directly via LinkedIn or email.')">
+          Send Message
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">AA<span>.</span></div>
+    <p>© 2025 Akbar Ali · MarkLogic Developer · Noida, India</p>
+    <p class="footer-sub">Built with plain HTML &amp; passion</p>
+  </div>
+</footer>
+
+<!-- IMAGE UPLOAD MODAL -->
+<div id="upload-modal" class="upload-modal-backdrop" style="display:none;">
+  <div class="upload-modal">
+    <div class="um-header">
+      <span class="um-title">Update Photo</span>
+      <button class="um-close" id="modal-close">&times;</button>
+    </div>
+    <div class="um-body">
+      <div class="um-preview">
+        <img id="upload-preview-img" src="" alt="Preview" />
+        <div class="um-preview-placeholder" id="upload-preview-placeholder">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <p>No image selected</p>
+        </div>
+      </div>
+      <div class="um-actions">
+        <label class="um-choose" for="upload-file-input">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          Choose Image
+        </label>
+        <input type="file" id="upload-file-input" accept="image/*" style="display:none;" />
+      </div>
+      <p class="um-hint">JPG, PNG, GIF, WebP · Saved in your browser</p>
+    </div>
+    <div class="um-footer">
+      <button class="um-cancel" id="modal-cancel">Cancel</button>
+      <button class="um-save" id="modal-save" disabled>Save Photo</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
